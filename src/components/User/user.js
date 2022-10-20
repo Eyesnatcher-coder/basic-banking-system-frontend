@@ -71,7 +71,7 @@ const Paruser = ({ name, email, account, savings }) => {
     }
 
     const putting = () => {
-        axios.put(process.env.API_URL + "/customerlist/" + `{${account}}`, change).then(() => {
+        axios.put(process.env.REACT_APP_API_URL + "/customerlist/" + `{${account}}`, change).then(() => {
             setSavings(change.savings)
             console.log("successfully updated")
         })
@@ -91,7 +91,7 @@ const Paruser = ({ name, email, account, savings }) => {
 
     const reciever = () => {
         console.log(valueofperson)
-        axios.post(process.env.API_URL + "/customerlist/", valueofperson)
+        axios.post(process.env.REACT_APP_API_URL + "/customerlist/", valueofperson)
     }
 
 
