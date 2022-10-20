@@ -1,0 +1,29 @@
+.frontview{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@keyframes play {
+    0% {}
+    50% {margin-top: 100px}
+    100%{}
+}
+
+h1{
+    text-align: left;
+    animation-name: play;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 0px 2px grey;
+}
+
+@media only screen and (max-width:669px){
+    .frontview{
+        display: block;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+
+    }
+}
