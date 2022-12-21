@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 
 const Customer = ({ name, email, savings }) => {
     return (
